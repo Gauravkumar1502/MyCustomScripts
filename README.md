@@ -18,3 +18,10 @@ To get started with MyCustomScripts, follow these steps:
 1. Clone this repository to your local machine.
 2. Open the terminal and navigate to the project directory.
 3. Run the main script file to start the configuration process.
+
+## Requirements
+
+- Git
+- PowerShell (for Windows) or Terminal (for MacOS and Linux).
+- Package managers (e.g., Chocolatey, Winget, apt, Homebrew, etc.) depending on the operating system.
+- Text editor for customizing configuration files.

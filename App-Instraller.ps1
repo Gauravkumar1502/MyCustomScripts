@@ -50,12 +50,6 @@ if (-not (Get-Command choco -ErrorAction SilentlyContinue)) {
     }
 }
 
-# Read the list of apps from the file
-$appsToInstall = Get-Content -Path ".\appsList.txt"
-
-# Create an array to hold unsuccessful attempts to install apps
-$failedToInstall = @()
-
 # Function to install an app using Winget
 function InstallWingetApp($appId) {
     Write-host ""
@@ -79,6 +73,12 @@ function InstallChocoApp($packageName) {
     $installProcess.WaitForExit()
     return $installProcess.ExitCode
 }
+
+# Read the list of apps from the file
+$appsToInstall = Get-Content -Path ".\appsList.txt"
+
+# Create an array to hold unsuccessful attempts to install apps
+$failedToInstall = @()
 
 # Process each line
 foreach ($app in $appsToInstall) {

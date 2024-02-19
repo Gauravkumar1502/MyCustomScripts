@@ -85,8 +85,8 @@ foreach ($app in $appsToInstall) {
     # Trim any leading or trailing white space
     $app = $app.Trim()
 
-    # Ignore empty lines
-    if ($app -eq "") {
+    # Ignore empty lines as well as lines that start with a hash (#) as they are considered comments
+    if ($app -eq "" -or $app.StartsWith("#")) {
         continue
     }
     $appDetails = $app.Split(" ")

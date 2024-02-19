@@ -1,9 +1,13 @@
+# if you want to comment a line, you can use the # symbol.
+# comment a line to prevent the app from being installed.
+
 winget sharkdp.bat
 winget 9NKSQGP7F2NH
 winget Telegram.TelegramDesktop
 winget Brave.Brave
-winget Docker.DockerDesktop
+# winget Docker.DockerDesktop
 winget Git.Git
+# winget JetBrains.IntelliJIDEA.Community
 winget JetBrains.IntelliJIDEA.Ultimate
 winget Microsoft.WindowsTerminal
 winget JanDeDobbeleer.OhMyPosh
